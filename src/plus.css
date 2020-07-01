@@ -1,0 +1,465 @@
+.position-center
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]:disabled
+{
+    background-color: white;
+}
+
+.home-item
+{
+    justify-content: space-around;
+}
+
+.home-item > h5
+{
+    width: 80%;
+    text-align: center;
+}
+
+.home-item > i
+{
+    font-size: 3rem;
+}
+
+#infosPerso
+{
+    /*display: grid;*/
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+}
+
+#namePerso > h3
+{
+    display: inline-block;
+}
+
+.bullet
+{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+.th-rotation
+{
+    font-size: 0.50rem;
+    transform: rotateZ(-90deg);
+}
+
+.grid > div:not(#divAddSkill)
+{
+    display: grid;
+}
+
+#skillsGrid > div:not(#divAddSkill)
+{
+    grid-template-columns: 1fr 5fr 1fr 3fr 2fr 10fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    align-items: end;
+}
+
+.abilities
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+.schoolInput
+{
+    width: 15px;
+    margin: 0 auto;
+}
+
+.w-1\/24 {
+    width: 4.17%;
+}
+.w-3\/24 {
+    width: 12.51%;
+}
+.w-5\/24 {
+    width: 20.85%;
+}
+.w-7\/24 {
+    width: 29.19%;
+}
+.w-9\/24 {
+    width: 37.53%;
+}
+.w-11\/24 {
+    width: 45.87%;
+}
+.w-13\/24 {
+    width: 54.21%;
+}
+.w-15\/24 {
+    width: 62.55%;
+}
+.w-17\/24 {
+    width: 70.89%;
+}
+.w-19\/24 {
+    width: 79.23%;
+}
+.w-21\/24 {
+    width: 87.57%;
+}
+.w-23\/24 {
+    width: 95.91%;
+}
+
+.top-1\/2 {
+    top: 50%;
+}
+
+.left-1\/2 {
+    left: 50%;
+}
+
+.center-itself
+{
+    transform: translate(-50%, -50%);
+}
+
+.y-center
+{
+    transform: translateY(-50%);
+}
+
+.y-none
+{
+    transform: translateY(0);
+}
+
+.left-33
+{
+    left: 33%;
+}
+
+.right-33
+{
+    right: 33%;
+}
+/*#skillsGrid *{
+    border: 1px solid black;
+}*/
+
+/*.bullet-active
+{
+
+    background-color: black;
+}*/
+
+#usedVoidPoints > input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+#usedVoidPoints > input[type=checkbox]:before
+{
+    font-family: "Font Awesome 5 Free";
+    content: '\f111';
+    display: block;
+    color: grey;
+    font-size: 1rem;
+    position: absolute;
+}
+
+#usedVoidPoints > input[type=checkbox]:checked:before
+{
+    font-family: "Font Awesome 5 Free";
+    content: '\f058';
+    display: block;
+    color: black;
+    font-size: 1rem;
+    position: absolute;
+    font-weight: 900;
+}
+
+.direction-rtl
+{
+    direction: rtl;
+}
+
+.tab
+{
+    background: url("brush-svg.svg") center/cover;
+}
+
+.vantage-grid
+{
+    display: grid;
+    grid-template-areas:
+            "a b c d"
+            "e e e e";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 4fr 2fr 1fr 5fr;
+    /*column-gap: 10px;
+    row-gap: 20px;*/
+    align-items: center;
+}
+
+/*.vantage-grid > *:not(.vantage-desc)
+{
+    border-bottom: black 1px solid;
+}*/
+
+.vantage-desc
+{
+    grid-area: e;
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.thumb-add-battle::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: .5;
+    z-index: 3;
+    transform: translate(-50%);
+}
+
+.thumb-add-battle::after
+{
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2.3rem;
+    color: #3fba7f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+}
+
+.battleBtn
+{
+    display: flex;
+    top: 50%;
+}
+
+.atkBtn
+{
+    align-items: center;
+    padding-left: .5rem;
+    transform: translate(-50%, -50%);
+}
+
+.delBtn
+{
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: .5rem;
+    transform: translate(50%, -50%);
+}
+
+@media (min-width: 768px) {
+    .battleBtn
+    {
+        display: initial;
+        top: 50%;
+    }
+
+    .atkBtn
+    {
+        padding-left: 0;
+        transform: translate(-75%, -50%);
+    }
+
+    .delBtn
+    {
+        padding-right: 0;
+        left: 100%;
+        transform: translate(-25%, -50%);
+    }
+}
+
+/**
+ ===  SVG MAP ====
+*/
+
+#Rokugan_Map
+{
+    transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+
+.mon
+{
+    opacity: 0;
+}
+
+#Lands > g
+{
+    stroke-width: 1;
+    stroke-dasharray: 2,2;
+    fill-opacity: 0;
+    transition: stroke-width 0.3s, fill-opacity 0.3s;
+}
+
+#Lands > g:hover
+{
+    fill-opacity: 0.8;
+    stroke-dasharray: none;
+    stroke-width: 4;
+}
+
+#Lands > g:hover > .mon
+{
+    opacity: 1;
+    stroke-width: 1;
+}
+
+#Ocean
+{
+    fill:#218dff;
+    stroke: #126bff;
+    stroke-width: 2;
+}
+
+#Grass, .grass
+{
+    fill:#698f4c;
+    /*
+    stroke: #30352e;
+    stroke-width: 2;
+    */
+}
+
+#Forests
+{
+    fill:#395629;
+    stroke: #002f00;
+    stroke-width: 2;
+}
+
+#Mountains
+{
+    fill: #9b836e;
+    /*stroke: #443d3a;
+    stroke-width: 2;*/
+}
+
+#Scorpion
+{
+    fill: #b54d47;
+    stroke: #9b0000;
+}
+
+#Scorpion .mon
+{
+    fill: #000000;
+}
+
+#Shadowland
+{
+    fill: #77746a;
+    stroke: #454238;
+}
+
+#Mantis
+{
+    fill: #688660;
+    stroke: #37432d;
+}
+
+#Unicorn
+{
+    fill: #8f719d;
+    stroke: #633899;
+}
+
+#Crane
+{
+    fill: #25b4c4;
+    stroke: #1587c4;
+}
+
+#Dragon
+{
+    fill: #62cc56;
+    stroke: #293e2a;
+}
+
+#Phoenix
+{
+    fill: #e88611;
+    stroke: #8b2d00;
+}
+
+#Lion
+{
+    fill: #c79916;
+    stroke: #4e3a29;
+}
+
+#Crab
+{
+    fill: #523add;
+    stroke: #1b1464;
+}
+
+#Merchant_Roads
+{
+    fill: #c0441a;
+}
+
+#Imperial_Roads
+{
+    fill: #bb812a;
+}
+
+.villages_walls {
+    fill: #bab3ae;
+}
+
+.villages_roofs {
+    fill: #4d4743;
+}
+
+.towers_walls {
+    fill: #846e5b;
+}
+
+.towers_main_door
+{
+    fill: #5b483b;
+}
+
+.towers_second_door {
+    fill: #846e5f;
+}
+
+.towers_roofs {
+    fill: #6b0073;
+}
+
+.cls-15
+{
+    fill: url('#MonGradient');
+}
